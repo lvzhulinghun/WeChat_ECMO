@@ -1,0 +1,19 @@
+var sub = function(val,index){
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  var ind = val.lastIndexOf("*")
+  if(ind > 0){
+    if(index == 0){
+      return val.substring(0,ind)
+    }else if(index == 1){
+      return val.substring(ind)
+    }
+  }else{
+    if(index == 0){
+      return val
+
+    }
+  }
+}
+module.exports.sub = sub;

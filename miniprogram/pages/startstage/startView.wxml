@@ -1,0 +1,26 @@
+
+<view class="aui-scrollView">
+  <view class='list'>
+   <form bindsubmit="startSubmit">
+    <!-- <image src='../../images/wupingzhunbei.png' ></image> -->
+      <view>
+         <image src="../../images/head.png" style="width: 100%;"></image>
+      </view>
+      <view class="aui-ver-form">
+          <view class="container1">
+                <view class="content bgcolor-6">
+                    <view class="input--juro input1">
+                        <label class="input__label--juro input__label">                    
+                            <input class="input__field--juro" name="randomCode" type="number" placeholder="请输入准备码"></input>                   
+                        </label>
+                    </view>
+                </view> 
+          </view>
+          <view class="aui-ver-button">
+              <button class="btn-view" style="margin-left: -4%;" form-type="submit">准备物品</button>
+          </view>
+      </view>   
+    </form>
+  </view>
+
+</view>

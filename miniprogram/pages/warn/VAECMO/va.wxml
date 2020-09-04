@@ -1,0 +1,104 @@
+<view class="warn">
+  <view class='title'>预警</view>
+  <view class='second-title'>
+    VA-ECMO病人资料</view>
+  <view class='line'></view>
+<checkbox-group  bindchange="vaniming" name="itemSelectLists">
+  <view class='list'>
+    <view>
+      1.诊断<text class='tip'>（多选）</text>
+    </view>
+    <view class='item'>
+      <checkbox value="心肌炎"></checkbox>
+      心肌炎
+    </view>
+    <view class='item'>
+      <checkbox value="难治性室颤/室扑"></checkbox>
+      难治性室颤/室扑
+    </view>
+    <view class='item'>
+      <checkbox value="心脏或肺移植术后"></checkbox>
+      心脏或肺移植术后
+    </view>
+    <view class='item'>
+      <checkbox value="先天性心脏病"></checkbox>
+      先天性心脏病
+    </view>
+    <view class='item'>
+      <checkbox value="其他诊断"></checkbox>
+      其他诊断
+    </view>
+    <view>
+      2.心脏<text class='tip'>（多选）</text>
+    </view>
+    <view class='item'>
+      <checkbox value="脉压差≤20mmHg"></checkbox>
+      脉压差≤20mmHg
+    </view>
+    <view class='item'>
+      <checkbox value="舒张压≥40mmHg"></checkbox>
+      舒张压≥40mmHg
+    </view>
+    <view class='item'>
+      <checkbox value="心跳骤停"></checkbox>
+      心跳骤停
+    </view>
+    <view>
+      3.呼吸<text class='tip'>（多选）</text>
+    </view>
+    <view class='item'>
+      <checkbox value="吸气峰压≤20cmH₂O"></checkbox>
+      吸气峰压≤20cmH₂O
+    </view>
+    <view>
+     4.插管时长
+    </view>
+    <view>
+      <radio-group name="chaguanTimes" bindchange="changeChaguanTimes">
+            <radio  class="radio-item" value="≤10h" checked="" >
+                ≤10h
+            </radio>
+            <radio  class="radio-item" value="11-29h" checked="" >
+                11-29h
+            </radio>
+            <radio  class="radio-item" value="≥30h" checked="" >
+                ≥30h
+            </radio>
+        </radio-group>
+    </view>
+    <view>
+      5.肾脏<text class='tip'>（多选）</text>
+    </view>
+    <view class='item'>
+      <checkbox value="急性肾功能衰竭"></checkbox>
+      急性肾功能衰竭
+    </view>
+    <view class='item'>
+      <checkbox value="慢性肾功能衰竭"></checkbox>
+      慢性肾功能衰竭
+    </view>
+    <view class='item'>
+      <checkbox value="碳酸氢根≤15mmol/l"></checkbox>
+      碳酸氢根≤15mmol/l
+    </view>
+    <view>
+      6.其他<text class='tip'>（多选）</text>
+    </view> 
+    <view class='item'>
+      <checkbox value="中枢神经系统功能障碍"></checkbox>
+      中枢神经系统功能障碍
+    </view>
+    <view class='item'>
+      <checkbox value="肝衰竭"></checkbox>
+      肝衰竭
+    </view>
+  </view>
+  </checkbox-group>
+  <form bindsubmit='vaformSubmit'>
+    <input class='input' name='age' type="number" placeholder='请输入病人年龄'></input>
+    <input class='input' name='weight' placeholder='请输入病人体重'></input>
+    <button class='button' form-type="submit">
+    提交
+    </button>
+    </form>
+</view>

@@ -1,0 +1,69 @@
+.item {
+  padding: 4rpx 0 4rpx 34rpx;
+}
+.title {
+  font-size: 34rpx;
+  color: #999;
+}
+.title-box{
+  border: 1px solid #999;
+  height: 2.3em;
+  width: 100%;
+  padding: 0.9em 0em 0.5em;
+  line-height: 24rpx;
+  border-radius: 22rpx;
+
+}
+.arrow-down::before {
+  content: "\e687";
+  font-size: 45rpx;
+  color: #1a94f4;
+  margin-right: 8rpx;
+  
+}
+.arrow-right::before {
+  content: "\e677";
+  font-size:  45rpx;
+  color: #1a94f4;
+  margin-right: 8rpx;
+  
+}
+
+.checkbox-no-select::before {
+  content: "\e8be";
+  font-size: 55rpx;
+  color: #409EFF;
+  margin-right: 8rpx;
+}
+.checkbox-select::before {
+  content: "\e611";
+  font-size: 55rpx;
+  color: #409EFF;
+  margin-right: 8rpx;
+}
+.child-item-icon::before {
+  content: "\e62c";
+  font-size: 55rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-style: normal;
+}
+.viewBtn{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #247CF0;
+  color: #fff;
+}
+.thirdChecked{
+  margin-left: 6%;
+}
+.placeholder-view {
+  width: 100%;
+  height: 150rpx;
+}

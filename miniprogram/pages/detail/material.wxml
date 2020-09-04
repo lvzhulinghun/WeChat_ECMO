@@ -1,0 +1,16 @@
+
+<view>
+  <view class='list'>
+    <view class='item'     
+    data-index="{{index}}"
+    wx:for="{{list}}" 
+     wx:for-index="index"
+     bindtap='redirectDetail'
+     wx:key="item.machineCode"
+     >
+    <image src='/images/machine.png' class='icon'></image>
+    <text class='title'>{{item.machineName}}</text>
+    </view>
+  
+  </view>
+</view>

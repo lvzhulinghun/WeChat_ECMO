@@ -1,0 +1,40 @@
+<wxs src="../../utils/subutil.wxs" module="tools" />
+<view class='form'>
+  <view class='item' wx:for="{{list}}" wx:key="key2">
+    <view class='title-box'>
+      <icon bindtap='handleUnfold' data-item="{{item}}" class="iconfont {{item.unfold?'arrow-down':'arrow-right'}}"></icon>
+      <!-- <checkbox class="iconfont {{item.selected?'checkbox-select':'checkbox-no-select'}}" bindtap='handleSelect' data-item="{{item}}"></checkbox> -->
+      <text class='title'>{{item.name}}</text>
+    </view>
+    <view class='child-list' wx:if="{{item.unfold}}">
+      <view class='item' wx:for="{{item.child}}" wx:for-item="firstChild" wx:key="key3">
+        <view class='title-box'>
+          <icon wx:if="{{firstChild.child.length > 0}}" class="iconfont {{firstChild.unfold?'arrow-down':'arrow-right'}}" bindtap='handleUnfold' data-item="{{firstChild}}"></icon>
+          <icon class="iconfont {{firstChild.selected?'checkbox-select':'checkbox-no-select'}}" 
+          bindtap='handleSelect' data-item="{{firstChild}}"></icon>
+          <text class='title'>{{firstChild.name}}</text>
+        </view>
+        <view class='child-list' wx:if="{{firstChild.unfold}}">
+          <view class='item' wx:for="{{firstChild.child}}" wx:key="key" wx:for-item="secondChild">
+            <view class='title-box'>
+              <icon wx:if="{{secondChild.child.length > 0}}" class='iconfont arrow-down'></icon>
+              <icon  class="iconfont thirdChecked {{secondChild.selected?'checkbox-select':'checkbox-no-select'}}" bindtap='handleSelect' data-item="{{secondChild}}"></icon>
+              <text class='title'>{{tools.sub(secondChild.name,0)}}<text style="color:red">{{tools.sub(secondChild.name,1)}}</text></text>
+            </view>
+            <view class='child-list'>
+
+
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+
+  </view>
+  
+</view>
+<view class='placeholder-view'></view>
+<view>
+    <button bindtap="submit" class="viewBtn">确 定</button>
+</view>

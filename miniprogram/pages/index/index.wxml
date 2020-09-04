@@ -1,0 +1,19 @@
+<view>
+  <view class="list">
+    <view class='item' 
+    bindtap="redirectDetail" 
+    data-index="{{index}}"
+    wx:for="{{list}}" 
+    wx:for-index="index" 
+    data-index='{{index}}'
+    wx:for="{{list}}" 
+     wx:for-index="index"
+    wx:key="item.sort">
+      <image src="{{'/images/' + icons[item.moduleCode]}}" class='icon'></image>
+      <text class='label'>{{item.moduleName}}</text>
+    </view>
+   
+  </view>
+  <wxc-dialog class="wxc-dialog" title="{{loginInfo.title}}" content="{{loginInfo.content}}" logName="{{loginInfo.logName}}" logImage="{{loginInfo.logImage}}" bindcancel="onCancel" bindconfirm="onConfirm">
+  </wxc-dialog>
+</view>

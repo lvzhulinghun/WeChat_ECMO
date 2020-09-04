@@ -1,0 +1,31 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "index/index",
+    
+    "pages/preparestage/preIndex",
+    "pages/startstage/startView",
+    "pages/startstage/timeView",
+    "pages/login/login",
+    "pages/warn/VAECMO/va",
+    "pages/warn/VVECMO/vv",
+	  
+    "index/my/my",
+    "pages/warn/warn",
+    
+    "pages/logs/logs",
+    "pages/auth",
+    "pages/detail",
+    "pages/detail/web-view",
+    "pages/detail/material"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#247CF0",
+    "navigationBarTitleText": "江苏省人民医院",
+    "navigationBarTextStyle": "white",
+    "backgroundColor":"#fff"
+  },
+  "sitemapLocation": "sitemap.json"
+}

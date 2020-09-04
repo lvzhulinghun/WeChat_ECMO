@@ -1,0 +1,68 @@
+/* pages/startstage/timeView.wxss */
+@font-face {
+  font-family: unidreamLED;
+  src: url("https://www.ecmogroup.com/Ecmo/smallProgram/font/UnidreamLED.ttf");
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+.timeView{
+  height: 50rpx;
+  text-align: center;
+  margin-top: 9rpx;
+  font-family: unidreamLED;
+  font-size: 1.5em;
+}
+.samebtn{
+  width: 17%;
+  height: 118rpx;
+  border-radius: 50%;
+  overflow:hidden;
+  padding-top:22rpx;
+  color: #fff;
+  font-size: 96%;
+  box-shadow: 0 5px 8px #dadefd;
+}
+.btn1{
+  background-color: #68f573;
+}
+.btn2{
+  background-color: #ed2c2c;
+}
+.btn3{
+  background-color: #2ceded;
+}
+.btn4{
+  background-color: #efe566;
+}
+.btn5{
+  background-color: #3cf;
+}
+.btn6{
+  background-color: #6565f6;
+}
+.backbtn{
+  overflow:hidden;
+  width: 48%;
+  float: left;
+  color: white;
+  background-color: #247CF0;
+  border-radius:22rpx;
+}
+.leftbtn{
+  float: left;
+}
+.rightbtn{
+  float: right;
+}
+.viewBtn{
+  width: 100%;
+  padding: 20rpx 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

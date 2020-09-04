@@ -1,0 +1,65 @@
+<view class="warn">
+  <view class='title'>预警</view>
+  <view class='second-title'>
+    E C M O</view>
+  <view class='line'></view>
+<checkbox-group  bindchange="niming" name="itemSelectLists">
+  <view class='list' bindtap='getValue'>
+    <view class='item' >
+      <checkbox value="1" data-name="严重颅脑损伤"></checkbox>
+      严重颅脑损伤
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="存在终末期肝病"></checkbox>
+      存在终末期肝病
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="非心源性因素（如尿毒症）导致严重慢性严重心力衰竭"></checkbox>
+      非心源性因素（如尿毒症）导致严重慢性严重心力衰竭
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="恶性肿瘤"></checkbox>
+      恶性肿瘤
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="感染性休克致全身毛细血管渗漏"></checkbox>
+      感染性休克致全身毛细血管渗漏
+    </view>
+    <view class='item' >
+      <checkbox value="2" data-name="60分钟内可启动的体外心肺复苏"></checkbox>
+      60分钟内可启动的体外心肺复苏
+    </view>
+    <view class='item' >
+      <checkbox value="2" data-name="心源性休克（EF小于25）"></checkbox>
+      心源性休克（EF小于25）
+    </view>
+    <view class='item' >
+      <checkbox value="2" data-name="肺栓塞致循环衰竭"></checkbox>
+      肺栓塞致循环衰竭
+    </view>
+    <view class='item' >
+      <checkbox value="3" data-name="ARDS，FiO：80%或以上，PEEP10 或以上，氧合指数小于50达3小时"></checkbox>
+      ARDS，FiO：80%或以上，PEEP10 或以上，氧合指数小于50达3小时
+    </view>
+    <view class='item' >
+      <checkbox value="3" data-name="ARDS，FiO：80%或以上，PEEP10 或以上，氧合指数小于80达6小时"></checkbox>
+      ARDS，FiO：80%或以上，PEEP10 或以上，氧合指数小于80达6小时
+    </view>
+    <view class='item' >
+      <checkbox value="3" data-name="ARDS，平台压小于32，呼吸频率达到35，pH小于7.25达6小时"></checkbox>
+      ARDS，平台压小于32，呼吸频率达到35，pH小于7.25达6小时
+    </view>
+    <view class='item' >
+      <checkbox value="3" data-name="严重气道狭窄不能建立人工气道"></checkbox>
+      严重气道狭窄不能建立人工气道
+    </view>
+  </view>
+  </checkbox-group>
+  <form bindsubmit='formSubmit'>
+    <input class='input' name='phone' type="number" placeholder='请输入手机号'></input>
+    <input class='input' name='names' placeholder='请输入医院名称'></input>
+    <button class='button' form-type="submit">
+    提交
+    </button>
+    </form>
+</view>

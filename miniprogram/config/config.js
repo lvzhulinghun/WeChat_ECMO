@@ -1,0 +1,1 @@
+export const hostUrl = "https://www.ecmogroup.com";

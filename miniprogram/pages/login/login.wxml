@@ -1,0 +1,32 @@
+
+<view class="aui-scrollView">
+  <view class='list'>
+   <form bindsubmit="loginformSubmit">
+    <!-- <image src='../../images/wupingzhunbei.png' ></image> -->
+      <view>
+         <image src="../../images/head.png" style="width: 100%;"></image>
+      </view>
+      <view class="aui-ver-form">
+          <h2>员工账号登录</h2>
+          <view class="aui-flex">
+                <view class="aui-flex-box">
+                    <image class="icon icon-phone" src="../../images/name.png"></image>
+                    <input name="userNo" type="text" autocomplete="off" placeholder="工号"></input>
+                </view>
+            </view>
+            <view class="aui-flex">
+                <view class="aui-flex-box">
+                    <image class="icon icon-code" src="../../images/password.png"></image>
+                    <input name="password" type="password" autocomplete="off" placeholder="密码"></input>
+                </view>
+            </view>
+            <view>
+                <view style="float:  right;height: 30px;" bindtap="visitor">游客访问</view>
+            </view>
+            <view class="aui-ver-button">
+                <button form-type="submit">立即登录</button>
+            </view>
+      </view>   
+    </form>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+@font-face {
+  font-family: 'iconfont';  /* project id 1995231 */
+  src: url('//at.alicdn.com/t/font_1995231_ncssw732dcp.eot');
+  src: url('//at.alicdn.com/t/font_1995231_ncssw732dcp.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1995231_ncssw732dcp.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1995231_ncssw732dcp.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1995231_ncssw732dcp.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1995231_ncssw732dcp.svg#iconfont') format('svg');
+  
+
+}
+

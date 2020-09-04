@@ -1,0 +1,94 @@
+<view class="warn">
+  <view class='title'>预警</view>
+  <view class='second-title'>
+    VV-ECMO病人资料</view>
+  <view class='line'></view>
+<checkbox-group  bindchange="vvniming" name="itemSelectLists">
+  <view class='list'>
+    <view class='item'>
+      <checkbox value="免疫抑制"></checkbox>
+      免疫抑制
+    </view>
+    <view class='item'>
+    机械通气时长
+    </view>
+    <view>
+      <radio-group name="tongqiTimes" bindchange="changetongqiTimes">
+            <radio  class="radio-item" value="<48h" checked="" >
+                小于48h
+            </radio>
+            <radio  class="radio-item" value="48-7d" checked="" >
+                48-7d
+            </radio>
+            <radio  class="radio-item" value=">7d" checked="" >
+                大于7d
+            </radio>
+        </radio-group>
+    </view>
+    <view class='item'>
+    急性呼吸诊断
+    </view>
+    <view>
+      <radio-group name="tongqiTimes2" bindchange="changetongqiTimes2">
+            <radio  class="radio-item" value="病毒性肺炎" checked="" >
+                病毒性肺炎
+            </radio>
+            <radio  class="radio-item" value="细菌性肺炎" checked="" >
+                细菌性肺炎
+            </radio>
+            <radio  class="radio-item" value="哮喘" checked="" >
+                哮喘
+            </radio>
+            <radio  class="radio-item" value="创伤/烧伤" checked="" >
+                创伤/烧伤
+            </radio>
+            <radio  class="radio-item" value="吸入性肺炎" checked="" >
+                吸入性肺炎
+            </radio>
+            <radio  class="radio-item" value="其他急性呼吸系统疾病" checked="" >
+                其他急性呼吸系统疾病
+            </radio>
+            <radio  class="radio-item" value="非呼吸系统及慢性呼吸系统疾病" checked="" >
+                非呼吸系统及慢性呼吸系统疾病
+            </radio>
+        </radio-group>
+    </view>
+
+    <view class='item'>
+      <checkbox value="中枢神经系统功能障碍"></checkbox>
+      中枢神经系统功能障碍
+    </view>
+    <view class='item'>
+      <checkbox value="急性相关（非肺部）感染"></checkbox>
+      急性相关（非肺部）感染
+    </view>
+    <view class='item'>
+      <checkbox value="肌松药物使用"></checkbox>
+      肌松药物使用
+    </view>
+    <view class='item'>
+      <checkbox value="碳酸氢钠输注"></checkbox>
+      碳酸氢钠输注
+    </view>
+    <view class='item'>
+      <checkbox value="心跳呼吸骤停"></checkbox>
+      心跳呼吸骤停
+    </view>
+    <view class='item'>
+      <checkbox value="PCO2≥75mmHg"></checkbox>
+      PCO2≥75mmHg
+    </view>
+    <view class='item'>
+      <checkbox value="吸气峰压≥42cmH₂O"></checkbox>
+      吸气峰压≥42cmH₂O
+    </view>
+  </view>
+  </checkbox-group>
+  <form bindsubmit='vvformSubmit'>
+    <input class='input' name='age' type="number" placeholder='请输入病人年龄'></input>
+    <input class='input' name='weight' placeholder='请输入病人体重'></input>
+    <button class='button' form-type="submit">
+    提交
+    </button>
+    </form>
+</view>

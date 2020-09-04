@@ -1,0 +1,139 @@
+/* pages/startstage/startView.wxss */
+
+.aui-scrollView {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  margin-top: -44px;
+}
+.input__field--juro {
+
+  z-index: 100;
+  padding: 50rpx .75em 0;
+  width: 100%;
+  background: 0;
+  color: #1784cd;
+  font-size: 1.1em;
+}
+.aui-ver-form{
+    background: #fff;
+    border-radius: 5px;
+    width: 74%;
+    margin: -9em auto 4em;
+    position: relative;
+    z-index: 2;
+    padding: 1.8em 1.8em 4em;
+}
+.container1 {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.content {
+  font-size: 150%;
+  padding: 0;
+}
+.input--juro {
+  overflow: hidden;
+}
+
+.input1 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em;
+  max-width: 400px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+  margin-left: 0%;
+}
+.aui-ver-button {
+  margin-top: 1.2rem;
+}
+.aui-ver-button button {
+  background: -webkit-linear-gradient(left,#586fe4,#676cea);
+  background: -o-linear-gradient(right,#586fe4,#676cea);
+  background: -moz-linear-gradient(right,#586fe4,#676cea);
+  background: linear-gradient(to right,#586fe4,#676cea);
+  background-color: #fe5455;
+  border-radius: 22px;
+  color: #fff;
+  border: 0;
+  width: 100%;
+  height: 3em;
+  line-height: 3.35rem;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 9px #dadefd;
+}
+
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: .8em;
+  width: 60%;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: 700;
+  font-family: helvetica neue,Helvetica,Arial,sans-serif;
+  -webkit-appearance: none;
+}
+.input__label--juro {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  text-align: left;
+  border: 1px solid #2fa8ec;
+}
+
+
+.input__label-content--juro {
+  padding: 2em 1em;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition: -webkit-transform .3s,color .3s;
+  transition: transform .3s,color .3s;
+  text-rendering: geometricPrecision;
+}
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+.input__label--juro {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  text-align: left;
+  border: 1px solid #2fa8ec;
+}
+
+.input__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 82%;
+  color: #6a7989;
+  font-weight: 700;
+  font-size: 70.25%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 4em;
+} 

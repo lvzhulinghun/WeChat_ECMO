@@ -1,0 +1,14 @@
+<view class="page-body">
+  <view class="btn-area" id="buttonContainer">
+   <view class='item' wx:for="{{stageList}}" wx:key="key2">
+      <view class='child-list' wx:if="{{item.startStage}}">
+          <view class="timeView" >{{item.nowTime}}</view>
+          <button bindtap="btnClick"  class="samebtn btn{{item.startStage}}" data-code="{{item.orderCode}}" data-startStage="{{item.startStage}}">{{item.remark}}</button>
+      </view>
+    </view>
+  </view>
+  <view class="viewBtn">
+      <button bindtap="btnBack" class="backbtn leftbtn">返回</button>
+      <button bindtap="btnCancel" class="backbtn rightbtn">取消</button>
+  </view>
+</view>

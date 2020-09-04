@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="auth-box">
+    <image class="auth-image" src="/images/logo.png"
+      mode=""></image>
+    <view class="title">
+      至上健康
+    </view>
+    <text class="introduce">申请获取以下权限</text>
+    <text class="desc">获得你的公开信息 (昵称, 头像等)</text>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='login-botton'>授权登录</button>
+  </view>
+</view>
