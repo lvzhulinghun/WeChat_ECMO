@@ -16,31 +16,47 @@ Page({
   },
   btnCancel:function(e){
       let code = this.data.orderCode
-      requestUrl.requestUrl({
-        url: "/Ecmo/smallPro/start/cancelOrder.htm",
-        params: {
-            openId: wx.getStorageSync('openId'),
-            code:code
-        }
-      }).then((data) => {
-          if("200" == data.data.code){
-            let mess = data.data.message
-            wx.showToast({
-              title: mess,
-              icon: 'success',//当icon：'none'时，没有图标 只有文字
-              duration: 2000
+      let url = this.redirecUrl
+      wx.showModal({
+        title: "提示",
+        content: "确定作废吗？",
+        showCancel: true,
+        cancelColor: "#111111",
+        confirmColor: '#002bff',
+        success: function (res) {
+          if (res.confirm) {
+            requestUrl.requestUrl({
+              url: "/Ecmo/smallPro/start/cancelOrder.htm",
+              params: {
+                  openId: wx.getStorageSync('openId'),
+                  code:code
+              }
+            }).then((data) => {
+                if("200" == data.data.code){
+                  let mess = data.data.message
+                  wx.showToast({
+                    title: mess,
+                    icon: 'success',//当icon：'none'时，没有图标 只有文字
+                    duration: 2000
+                  })
+                  setTimeout(url,2000)
+                }else{
+                  wx.showToast({
+                    title: '提交失败',
+                    icon: 'none',//当icon：'none'时，没有图标 只有文字
+                    duration: 2000
+                  })
+                }
+            }).catch((errorMsg) => {
+              console.error(errorMsg)
             })
-            setTimeout(this.redirecUrl,2000)
           }else{
-            wx.showToast({
-              title: '提交失败',
-              icon: 'none',//当icon：'none'时，没有图标 只有文字
-              duration: 2000
-            })
+              
           }
-      }).catch((errorMsg) => {
-        console.error(errorMsg)
+          
+        }
       })
+      
   },
   setDATA:function(stageList){
     
@@ -67,11 +83,11 @@ Page({
           cancelColor: "#111111",
           confirmColor: '#002bff',
           success: function (res) {
-              stageList[index].nowTime=""
-              that.setData({
-                stageList:stageList
-              })
               if (res.confirm) {
+                stageList[index].nowTime=""
+                that.setData({
+                  stageList:stageList
+                })
                 requestUrl.requestUrl({
                   url: "/Ecmo/smallPro/start/backOrder.htm",
                   params: {

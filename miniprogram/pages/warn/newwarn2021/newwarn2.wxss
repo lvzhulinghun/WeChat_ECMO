@@ -1,0 +1,99 @@
+/* pages/warn/index.wxss */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #409EFF;
+}
+radio .wx-radio-input.wx-radio-input-checked {
+  background: #409EFF;
+}
+checkbox .wx-checkbox-input {
+  width: 50rpx;
+  height: 50rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 38rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+checkbox .wx-checkbox-input{
+  border: 1px solid #409EFF;
+}
+radio .wx-radio-input{
+  border: 1px solid #409EFF;
+}
+.warn {
+  padding: 26rpx;
+}
+.error {
+  color: #F56C6C;
+}
+.primary {
+  color: #409EFF;
+}
+.title {
+  font-size: 48rpx;
+}
+.second-title {
+  font-size: 36rpx;
+  color: #888;
+}
+.line {
+  margin-top: 20rpx;
+  height: 1px;
+  background: #eee;
+}
+.list {
+  margin-top: 20rpx;
+}
+.item {
+  padding: 8rpx;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.radio-item {
+  padding: 8rpx;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  --color: #409EFF;
+}
+.input {
+  margin-top: 20rpx;
+  height: 120rpx;
+  background: #eee;
+  border-radius: 40rpx;
+  padding: 0 40rpx;
+  font-size: 32rpx;
+}
+.button {
+  margin-top: 40rpx;
+  background: #409EFF;
+  color: #fff;
+  border-radius: 40rpx;
+}
+.inputDig{
+    border-color: red;
+    border-bottom: 2rpx solid #D7D6DC;
+    width: 6em;
+}
+.label-word{
+  width: 7em;
+  color: #156cf0;
+  font-size: 29rpx;
+}
+.tip-word{
+  font-size: 22rpx;
+  color: grey;
+}
+.result-word{
+  color:red;
+  font-size: 29rpx;
+}

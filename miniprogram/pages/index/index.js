@@ -33,13 +33,14 @@ Page({
     if (item.moduleCode === "MK002") {
       this.redirectMaterial('/pages/detail/material');
     }else if(item.moduleCode == "MK001"){
-      this.redirectMaterial('/pages/warn/warn');
+      // this.redirectMaterial('/pages/warn/warn');
+      this.redirectMaterial('/pages/warn/newwarn2021/newwarn');
     }
     if (item.moduleCode === "MK003") { 
       this.redirectMaterial('/pages/startstage/startView');
     }
     if (item.moduleCode === "MK004") { 
-      
+      // this.redirectMaterial('/pages/warn/newwarn2021/newwarn');
     }
     if(item.moduleCode == "MK005"){
         let userInfo = wx.getStorageSync('userInfo')

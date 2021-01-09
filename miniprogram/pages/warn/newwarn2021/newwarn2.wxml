@@ -1,0 +1,80 @@
+<view class="warn">
+  <view class='title'>预警</view>
+  <view class='second-title'>
+    出现下列症状</view>
+  <view class='line'></view>
+<checkbox-group  bindchange="vvniming" name="itemSelectLists">
+  <view class='list'>
+    <view class='item'>
+    大剂量血管活性药物（>40）
+    </view>
+    
+
+    <view class="item">
+    <label  class="label-word">肾上腺素:</label><input type="digit" data-sid="com1" class="inputDig" placeholder-style="color:#156cf0" placeholder="" maxlength="4"  bindblur="blur_com" />(ug/kg/min)
+    </view>
+    <view class="item">
+     <label class="label-word">去甲肾上腺素:</label><input type="digit" data-sid="com2" placeholder-style="color:#156cf0" class="inputDig" placeholder="" maxlength="4" bindblur="blur_com" />(ug/kg/min)
+    </view>
+    <view class="item">
+     <label class="label-word">多巴胺:</label><input type="digit" data-sid="com3" class="inputDig" placeholder-style="color:#156cf0" placeholder="" maxlength="4" bindblur="blur_com" />(ug/kg/min)
+    </view>
+    <view class="item">
+     <label class="label-word">多巴酚丁胺:</label><input type="digit" data-sid="com4" class="inputDig" placeholder-style="color:#156cf0" placeholder="" maxlength="4" bindblur="blur_com" />(ug/kg/min)
+    </view>
+    <view class="item">
+      <label class="result-word">血管活性药物积分 = {{resultVal}}
+      </label>
+    </view>
+    <view class="item">
+        <label class="tip-word">公式提示：[肾上腺素(ug/kg/min) +去甲肾上腺素(ug/kg/min)]×100+多巴胺(ug/kg/min)+多巴酚丁胺(ug/kg/min)</label>
+    </view>
+    <view class='item'>
+    低血压：平均动脉压
+    </view>
+    <view>
+      <radio-group name="tongqiTimes" bindchange="changetongqiTimes">
+            <radio  class="radio-item" value="1" checked="" >
+                新生儿{{'<'}}40mmHg
+            </radio>
+            <radio  class="radio-item" value="1" checked="" >
+                婴幼儿{{'<'}}50mmHg
+            </radio>
+            <radio  class="radio-item" value="1" checked="" >
+                儿童、成人{{'<'}}60mmHg
+            </radio>
+        </radio-group>
+    </view>
+    <view class='item'>
+    急性呼吸诊断：
+    </view>
+    <view class='item'>
+      <checkbox value="1"></checkbox>
+      {{'<'}}0.5ml/kg/h，持续6小时或以上
+    </view>
+    <view class='item'>
+       严重代谢性酸中毒：
+    </view>
+    <view class='item'>
+      <checkbox value="1"></checkbox>
+      pH{{'<'}} 7.15或 BE{{'<'}} -5mmol/L或乳酸{{'>'}} 4mmol/L
+    </view>
+    <view class='item'>
+        呼吸衰竭：
+    </view>
+    <view class='item'>
+      <checkbox value="1"></checkbox>
+      有创机械通气下PO2/FiO2 {{'<'}}100或PCO2{{'>'}}60mmHg
+    </view>
+    <view class='item'>
+      <checkbox value="2"></checkbox>
+      无上述情况
+    </view>
+  </view>
+  </checkbox-group>
+  <form bindsubmit='newwarn2formSubmit'>
+    <button class='button' form-type="submit">
+    提交
+    </button>
+  </form>
+</view>

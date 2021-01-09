@@ -36,8 +36,8 @@ Page({
   
   formSubmit(e){
     let that = this
-    var phone = e.detail.value.phone
-    var names = e.detail.value.names
+    // var phone = e.detail.value.phone
+    // var names = e.detail.value.names
     var tip = this.data.tip
     if(tip == ""){
       wx.showToast({
@@ -47,38 +47,44 @@ Page({
       })
       return
     }
-    if(!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(phone))){
-      wx.showToast({
-        title: '请正确填写手机号码！',
-        icon: 'none',//当icon：'none'时，没有图标 只有文字
-        duration: 2000
-      })
-      return ;
-    }
-    if(names == undefined ||names == ""){
-      wx.showToast({
-        title: '请正确输入医院名称',
-        icon: 'none',//当icon：'none'时，没有图标 只有文字
-        duration: 2000
-      })
-      return;
-    }
+    // if(!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(phone))){
+    //   wx.showToast({
+    //     title: '请正确填写手机号码！',
+    //     icon: 'none',//当icon：'none'时，没有图标 只有文字
+    //     duration: 2000
+    //   })
+    //   return ;
+    // }
+    // if(names == undefined ||names == ""){
+    //   wx.showToast({
+    //     title: '请正确输入医院名称',
+    //     icon: 'none',//当icon：'none'时，没有图标 只有文字
+    //     duration: 2000
+    //   })
+    //   return;
+    // }
     var tag = this.data.tag
     var listsInfo =this.data.lists
     wx.showModal({
       title: '提示',
       content: this.data.tip,
+      cancelText:'不联系',
+      confirmText:'联系中心',
       success(res) {
         if (res.confirm) {
           requestUrl.requestUrl({//将用户信息传给后台数据库
                 url: "/Ecmo/smallPro/warning/sendSms.htm",
                 params: {
                     openId: wx.getStorageSync('openId'),
-                    phone:phone,
-                    names:names,
+                    phone:'',
+                    names:'',
                     valuesInfo:listsInfo
                 }
             }).then((data) => {
+              //拨打ecmo中心电话
+              wx.makePhoneCall({
+                phoneNumber: '13915906015',
+              })
                 if("200" == data.data.code){
                   wx.showModal({
                     title: '提示',

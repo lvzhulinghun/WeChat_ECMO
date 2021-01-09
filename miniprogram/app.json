@@ -18,7 +18,8 @@
     "pages/auth",
     "pages/detail",
     "pages/detail/web-view",
-    "pages/detail/material"
+    "pages/detail/material",
+    "pages/warn/newwarn2021/newwarn2"
   ],
   "window": {
     "backgroundTextStyle": "light",

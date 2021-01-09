@@ -48,6 +48,7 @@ Page({
         if("200" == data.data.code){
           console.info(data)
           const name = data.data.obj.userName
+          wx.setStorageSync('openId', data.data.obj.wxOpenId);
           wx.showToast({
             title: '欢迎:'+name+'登陆成功',
             icon: 'none',//当icon：'none'时，没有图标 只有文字

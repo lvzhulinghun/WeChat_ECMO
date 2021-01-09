@@ -1,0 +1,73 @@
+<view class="warn">
+  <view class='title'>预警</view>
+  <view class='second-title'>
+    患者患有如下疾病</view>
+  <view class='line'></view>
+<checkbox-group  bindchange="niming" name="itemSelectLists">
+  <view class='list' bindtap='getValue'>
+    <view class='item' >
+      <checkbox value="1" data-name="心搏骤停（CPR时间 < 10min）"></checkbox>
+      心搏骤停（CPR时间 {{'<'}} 10min）
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="重症肺炎/重度ARDS"></checkbox>
+      重症肺炎/重度ARDS
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="急性暴发性心肌炎"></checkbox>
+      急性暴发性心肌炎
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="急性冠脉综合征伴心源性休克"></checkbox>
+      急性冠脉综合征伴心源性休克
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="顽固性恶性心律失常"></checkbox>
+      顽固性恶性心律失常
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="高危肺栓塞"></checkbox>
+      高危肺栓塞
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="急性中毒所致的呼吸循环衰竭"></checkbox>
+      急性中毒所致的呼吸循环衰竭
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="多发伤合并呼吸循环衰竭"></checkbox>
+      多发伤合并呼吸循环衰竭
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="感染性休克伴心肌损伤"></checkbox>
+      感染性休克伴心肌损伤
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="急性气道梗阻/重度气道狭窄"></checkbox>
+      急性气道梗阻/重度气道狭窄
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="严重二氧化碳潴留，机械通气无效"></checkbox>
+      严重二氧化碳潴留，机械通气无效
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="重症哮喘"></checkbox>
+      重症哮喘
+    </view>
+    <view class='item' >
+      <checkbox value="1" data-name="重各种高危手术保驾辅助及各类不明原因的呼吸循环衰竭症哮喘"></checkbox>
+      各种高危手术保驾辅助及各类不明原因的呼吸循环衰竭
+    </view>
+    <view class='item' >
+      <checkbox value="2" data-name="无上述疾病"></checkbox>
+      无上述疾病
+    </view>
+  </view>
+  </checkbox-group>
+  <form bindsubmit='newwarnformSubmit'>
+    <!-- <input class='input' name='phone' type="number" placeholder='请输入手机号'></input> -->
+    <!-- <input class='input' name='names' placeholder='请输入医院名称'></input> -->
+    <button class='button' form-type="submit">
+    提交
+    </button>
+    </form>
+</view>

@@ -56,8 +56,8 @@
   </view>
   </checkbox-group>
   <form bindsubmit='formSubmit'>
-    <input class='input' name='phone' type="number" placeholder='请输入手机号'></input>
-    <input class='input' name='names' placeholder='请输入医院名称'></input>
+    <!-- <input class='input' name='phone' type="number" placeholder='请输入手机号'></input> -->
+    <!-- <input class='input' name='names' placeholder='请输入医院名称'></input> -->
     <button class='button' form-type="submit">
     提交
     </button>
